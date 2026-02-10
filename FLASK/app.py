@@ -26,6 +26,11 @@ def feedback():
 
     return render_template('feedback.html', error=error)
 
+@app.route('/thankyou', methods=['GET'])
+def thankyou():
+    user='Anugrah K'
+    return render_template('thankyou.html',user=user)
+
 @app.route('/hello', methods=['GET'])
 def hello():
     return jsonify(message="Hello, World!")
