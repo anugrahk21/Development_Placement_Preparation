@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STUDENT MANAGEMENT SYSTEM</title>
+  </head>
+  <body>
+    <h1>STUDENT MANAGEMENT SYSTEM : UPDATE</h1>
+
+    <!-- Simple form to input values for the DB -->
+    <form action="/update" method="post" onsubmit="alert('Updated');">
+      <label for="roll_no">Roll Number of Student to be UPDATED:</label><br>
+      <input type="number" id="rno" name="roll_no" placeholder="Enter your Roll Number" required><br><br>
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="n" name="name" min="1" placeholder="Enter your updated Name"  required><br><br>
+
+      <label for="marks">Marks:</label><br>
+      <input type="number" id="m" name="marks" placeholder="Enter your updated Marks" required><br><br>
+
+      <button type="submit">Update Student</button>
+    </form>
+
+  </body>
+</html>

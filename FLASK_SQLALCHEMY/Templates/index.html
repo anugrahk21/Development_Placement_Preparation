@@ -1,12 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Flask Home</title>
-  </head>
-  <body>
-    <h1>Welcome Anugrah K</h1>
-    <p>Your Flask app is running.</p>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STUDENT MANAGEMENT SYSTEM</title>
+</head>
+
+<body>
+  <h1>STUDENT MANAGEMENT SYSTEM : INSERT</h1>
+
+  <!-- Simple form to input values for the DB -->
+  <form action="/home" method="post" enctype="multipart/form-data" onsubmit="alert('Submitted');">
+    <label for="roll_no">Roll Number:</label><br>
+    <input type="number" id="rno" name="roll_no" placeholder="Enter your Roll Number" required><br><br>
+
+    <label for="photo">Photo:</label><br>
+    <input type="file" id="p" name="photo" placeholder="Enter your Photo" required><br><br>
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="n" name="name" min="1" placeholder="Enter your Name" required><br><br>
+
+    <label for="marks">Marks:</label><br>
+    <input type="number" id="m" name="marks" placeholder="Enter your Marks" required><br><br>
+
+    <button type="submit">Save Student</button>
+  </form>
+
+  <a href="/update">Update Student</a>
+  <a href="/delete">Delete Student</a>
+  <a href="/logout">Logout</a>
+
+</body>
+
 </html>
